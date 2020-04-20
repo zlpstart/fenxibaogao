@@ -1,0 +1,86 @@
+.login {
+    background:rgba(6,164,118,0.03);
+}
+.container {
+    box-sizing: border-box;
+    padding-top:175.0071px;
+}
+.login_wrap {
+    width: 100%;
+    height: 725.99px;
+    background:rgba(4,208,152,1);
+    /* opacity:0.15; */
+    position: relative;
+}
+.login_box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -40.9925px;
+    left: -40.9925px;
+    opacity:1;
+}
+.box_left {
+    height: 100%;
+    padding: 0;
+}
+.box_left img {
+    width: 100%;
+    height: 100%;
+}
+.box_right {
+    height: 100%;
+    background: white;
+}
+.box_right {
+    padding-top: 145.996px;
+    box-sizing: border-box;
+}
+.right_title {
+    margin-bottom: 32.0055px;
+}
+.right_title h1 {
+    font-size:35.9993px;
+    font-family:PingFangSC-Semibold,PingFang SC;
+    font-weight:600;
+    color:rgba(51,51,51,1);
+    text-align: center;
+}
+.right_from {
+    width: 375.9929px;
+    margin: auto;
+}
+.right_from input {
+    width:375.9929px;
+    height:56.0063px;
+    border-radius:10.0035px;
+    border:0.9975px solid rgba(178,186,184,1);
+}
+.right_from button {
+    margin-top: 111.9936px;
+    width:375.9929px;
+    height:56.0063px;
+    background:rgba(4,199,142,1);
+    border-radius:10.0035px;
+}
+.login_bottom {
+    margin-top: 58.0032px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 72.998px;
+}
+.bottom_txt p {
+    font-size:18.0101px;
+    font-family:PingFangSC-Regular,PingFang SC;
+    font-weight:400;
+    color:rgba(4,199,142,1);
+    text-align: center;
+}
+.decorate{
+    width:62.9945px;
+    height:0.9975px;
+    background: #04C78EFF;
+    margin-top: 12.0004px;
+    margin-left: 15.9942px;
+    margin-right: 15.9942px;
+}

@@ -1,86 +1,67 @@
 .login {
-    background:rgba(6,164,118,0.03);
-}
-.container {
-    box-sizing: border-box;
-    padding-top:175.0071px;
-}
-.login_wrap {
     width: 100%;
-    height: 725.99px;
-    background:rgba(4,208,152,1);
-    /* opacity:0.15; */
-    position: relative;
+    height: 100%;
+    padding-top: 83px;
+    box-sizing: border-box;
+    background: #F7FCFB;
+    padding-bottom: 52px;
 }
 .login_box {
     width: 100%;
     height: 100%;
+    display: flex;
     position: absolute;
-    top: -40.9925px;
-    left: -40.9925px;
-    opacity:1;
+    top: -29px;
+    left: -29px;
 }
 .box_left {
-    height: 100%;
-    padding: 0;
+    width: 449px;
+    height: 517px;
 }
 .box_left img {
     width: 100%;
     height: 100%;
 }
-.box_right {
-    height: 100%;
+.login .box_right {
+    width: 386px;
+    height: 517px;
     background: white;
-}
-.box_right {
-    padding-top: 145.996px;
+    padding-top: 104px;
     box-sizing: border-box;
+    text-align: center;
 }
-.right_title {
-    margin-bottom: 32.0055px;
+.box_right input {
+    width:268px;
+    height:40px;
+    border-radius:7px;
+    border:1px solid rgba(178,186,184,1);
+}
+.login_wrap {
+    width: 840px;
+    height: 517px;
+    background: #D0F4EA;
+    margin: auto;
+    position: relative;
 }
 .right_title h1 {
-    font-size:35.9993px;
+    font-size:26px;
     font-family:PingFangSC-Semibold,PingFang SC;
     font-weight:600;
     color:rgba(51,51,51,1);
-    text-align: center;
 }
-.right_from {
-    width: 375.9929px;
-    margin: auto;
+.right_from .el-form-item:nth-child(1) input {
+    margin-top: 23px;
 }
-.right_from input {
-    width:375.9929px;
-    height:56.0063px;
-    border-radius:10.0035px;
-    border:0.9975px solid rgba(178,186,184,1);
+.right_from .el-form-item:nth-child(2) input{
+    margin-top: 12px;
 }
 .right_from button {
-    margin-top: 111.9936px;
-    width:375.9929px;
-    height:56.0063px;
+    margin-top: 80px;
+    width:268px;
+    height:40px;
     background:rgba(4,199,142,1);
-    border-radius:10.0035px;
+    border-radius:7px;
 }
-.login_bottom {
-    margin-top: 58.0032px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 72.998px;
-}
-.bottom_txt p {
-    font-size:18.0101px;
-    font-family:PingFangSC-Regular,PingFang SC;
-    font-weight:400;
-    color:rgba(4,199,142,1);
-    text-align: center;
-}
-.decorate{
-    width:62.9945px;
-    height:0.9975px;
-    background: #04C78EFF;
-    margin-top: 12.0004px;
-    margin-left: 15.9942px;
-    margin-right: 15.9942px;
+.login >>> .el-form-item {
+    margin-bottom: 0 !important;
 }

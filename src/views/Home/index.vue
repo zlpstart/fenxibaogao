@@ -1,29 +1,48 @@
 <template>
-    <div class="home">
-        我是首页
+    <div class="layout">
+        <div class="layout_wrap">
+            <div class="layout_top">
+                <topbar />
+            </div>
+            <div class="layout_box">
+                <div class="box_left">
+                    <sidebar/>
+                </div>
+                <div class="box_right">
+                    <!-- <appmain/> -->
+                    <router-view/>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
-import {
-    logout
-} from '@/api/Home'
+import '../../styles/layout/index.css'
+import topbar from '../../components/TopBar/index'
+import sidebar from '../../components/Sidebar/index'
+import appmain from '../../components/AppMain/index'
+import New from '../../components/AppMain/index'
 
 export default {
-    name:'home',
+    name:'layout',
     data(){
         return {
 
         }
     },
-    methods:{
-        getAXIOS(){
-            logout()
-        }
-    }
+    components:{
+        topbar,
+        sidebar,
+        appmain,
+        New
+    },
+
 }
 </script>
 
 <style scoped>
-
+.box_right {
+    width: 812px;
+}
 </style>

@@ -5,23 +5,25 @@ import { getToken, setToken, removeToken } from '../../utils/auth'
 
 const state = {
     token: '',
-    loginState:false
+    loginState:false,
+    loginName:''
 }
 
 const getters = {
     getToken: state => state.token,
-    getLoginState:state => state.loginState
+    getLoginState:state => state.loginState,
+    getLoginName:state => state.loginName
 }
 
 const mutations = {
     changeToken: (state, e) => state.token = e,
-    changeLoginState:(state,e) => state.loginState = e
+    changeLoginState:(state,e) => state.loginState = e,
+    changeLoginName:(state,e) => state.loginName = e
 }
 
 const actions = {
     login({ commit, state }, ruleForm) {
         const { loginName, password } = ruleForm
-        console.log("我发过来了")
         return new Promise((resolve, reject) => {
             axios({
                 method: "post",
@@ -38,6 +40,7 @@ const actions = {
             })
                 .then(res => {
                     setToken(res.sessionToken)
+                    commit('changeLoginName',res.data.name)
                     commit("changeToken", res.sessionToken)
                     commit("changeLoginState",true)
                     resolve()

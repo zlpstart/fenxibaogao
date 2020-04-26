@@ -10,6 +10,8 @@ import store from './store'
 import ElementUI from 'element-ui';
 // 引入elementui样式
 import 'element-ui/lib/theme-chalk/index.css';
+
+import 'lib-flexible/flexible.js'
 // // 引入nprogress
 // import NProgress from 'nprogress'
 // // 这个引入nprogress样式必须引入

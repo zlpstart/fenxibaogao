@@ -12,6 +12,7 @@
     "element-ui": "^2.13.1",
     "jquery": "^3.5.0",
     "js-cookie": "^2.2.1",
+    "lib-flexible": "^0.3.2",
     "nprogress": "^0.2.0",
     "popper.js": "^1.16.1",
     "vue": "^2.6.11",
@@ -24,6 +25,7 @@
     "@vue/cli-plugin-vuex": "~4.3.0",
     "@vue/cli-service": "~4.3.0",
     "axios": "^0.18.1",
+    "px2rem-loader": "^0.1.9",
     "vue-cli-plugin-axios": "0.0.4",
     "vue-template-compiler": "^2.6.11"
   },

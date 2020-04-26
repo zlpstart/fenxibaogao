@@ -46,7 +46,6 @@ service.interceptors.response.use(
    * You can also judge the status by HTTP Status Code
    */
   response => {
-    console.log(response.data.sessionToken)
     NProgress.done() // 设置加在进度条结束
     const res = response.data
 
